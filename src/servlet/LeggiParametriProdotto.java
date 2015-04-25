@@ -26,7 +26,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	String descrizione = request.getParameter("descrizione").toUpperCase();
 	String codice = request.getParameter("codice").toUpperCase();
 	
-	// metto i valori nella sessione
+	// metto i valori nella sessione (devo metterli nel confermaparametri?)
 			HttpSession session = request.getSession();
 			session.setAttribute("NOME", nome);
 			session.setAttribute("PREZZO", prezzo);
@@ -61,7 +61,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	//il dispatcher, grazie al quale inoltro la richiesta tramite il metodo forward.
 	//Quindi in pratica collego la servlet corrente alla servlet di conferma
 	ServletContext application  = getServletContext();
-	RequestDispatcher rd = application.getRequestDispatcher("/conferma");
+	RequestDispatcher rd = application.getRequestDispatcher("/ConfermaParametri.jsp");
 	rd.forward(request, response);
 	return; 
  	

@@ -16,8 +16,8 @@
 </ul>
 <h2>Scegli:</h2>
 <ul>
-<li><a href= <%="\"mostraParametri.jsp" + "\"" %>> Conferma i dati inseriti</a></li>
-<li><a href= <%="\"newProduct.jsp" + "\"" %>>     Torna all'inserimento</a></li>
+<li><a href= "<c:url value="mostraParametri.jsp" />"> Conferma i dati inseriti</a></li>
+<li><a href= "<c:url value="newProduct.jsp" />">     Torna all'inserimento</a></li>
 </ul>
 </body>
 </html>

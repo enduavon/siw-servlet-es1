@@ -9,14 +9,14 @@
 <body>
 <h1>Dati inseriti nella form</h1>
 <ul>
-<li>Nome:<b> <% out.println(session.getAttribute("NOME"));%> </b></li>
-<li>Prezzo:<b> <% out.println(session.getAttribute("PREZZO"));%> </b></li>
-<li>Descrizione:<b> <% out.println(session.getAttribute("DESCRIZIONE"));%> </b></li>
-<li>Codice:<b> <% out.println(session.getAttribute("CODICE"));%> </b></li>
+<li>Nome:<b> ${nomeCorrente} </b></li>
+<li>Prezzo:<b> ${prezzoCorrente} </b></li>
+<li>Descrizione:<b> ${descrizioneCorrente} </b></li>
+<li>Codice:<b> ${codiceCorrente} </b></li>
 </ul>
 <h1>Altri dati relativi alla richiesta</h1>
-<br />IP: <b> <% out.println(session.getAttribute("address"));%> </b>
-<br />Host: <b> <% out.println(session.getAttribute("host"));%> </b>
-<br />User Agent: <b> <% out.println(session.getAttribute("userAgent"));%> </b>
+<br />IP: <b> ${address} </b>
+<br />Host: <b> ${host} </b>
+<br />User Agent: <b> ${userAgent} </b>
 </body>
 </html>

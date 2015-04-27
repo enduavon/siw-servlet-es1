@@ -9,15 +9,15 @@
 <body>
 <h1>Dati inseriti nella form</h1>
 <ul>
-<li>Nome:<b> <% out.println(session.getAttribute("NOME"));%> </b></li>
-<li>Prezzo:<b> <% out.println(session.getAttribute("PREZZO"));%> </b></li>
-<li>Descrizione:<b> <% out.println(session.getAttribute("DESCRIZIONE"));%> </b></li>
-<li>Codice:<b> <% out.println(session.getAttribute("CODICE"));%> </b></li>
+<li>Nome:<b> ${nomeCorrente} </b></li>
+<li>Prezzo:<b> ${prezzoCorrente} </b></li>
+<li>Descrizione:<b> ${descrizioneCorrente} </b></li>
+<li>Codice:<b> ${codiceCorrente} </b></li>
 </ul>
 <h2>Scegli:</h2>
 <ul>
 <li><a href= <%="\"mostraParametri.jsp" + "\"" %>> Conferma i dati inseriti</a></li>
-<li><a href= <%="\"newProduct.html" + "\"" %>>     Torna all'inserimento</a></li>
+<li><a href= <%="\"newProduct.jsp" + "\"" %>>     Torna all'inserimento</a></li>
 </ul>
 </body>
 </html>
